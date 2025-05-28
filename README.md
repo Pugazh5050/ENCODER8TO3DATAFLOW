@@ -36,21 +36,46 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+STEP-1 Define Inputs and Outputs
+
+STEP-2 Understand the Encoder Functionality
+
+STEP-3 Design the Functional Table
+
+STEP-4 Write Verilog Code
+
+STEP-5 Verify Verilog Code
+
+STEP-6 Synthesize the Design
+
+STEP-7 Implement in FPGA
+
+STEP-8 Verify Functionality on FPGA
 
 **PROGRAM**
-
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:
+```
+module pugazh5(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+assign a0=d1|d3|d5|d7;
+assign a1=d2|d3|d6|d7;
+assign a2=d4|d5|d6|d7;
+endmodule
+Developed by:Pugazhalenthi V
+RegisterNumber:212224100047
 */
+```
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![Screenshot 2025-05-27 140901](https://github.com/user-attachments/assets/31173275-6fb4-4a00-9212-46573228ff07)
+
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+
+![image](https://github.com/user-attachments/assets/82bced13-5bf7-464f-b9cc-ae96938e5ecc)
+
 
 **RESULTS**
 
-
-
-
+Thus the given experiment is completed successfully
